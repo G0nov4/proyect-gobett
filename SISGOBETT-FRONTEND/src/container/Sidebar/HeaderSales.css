@@ -1,0 +1,191 @@
+/* Estilo del header */
+.header {
+    height: 40px;
+    background-color: #f5222d;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Vista Desktop */
+.desktop-view {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.branch-name {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 4px;
+    height: 100%;
+}
+
+.nav-link {
+    height: 40px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.85);
+    transition: all 0.2s;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.nav-link svg {
+    font-size: 14px;
+}
+
+.user-profile {
+    min-width: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Vista Móvil */
+.mobile-view {
+    display: none;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu-btn {
+    color: white;
+    padding: 4px;
+}
+
+.mobile-title {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Drawer Links */
+.drawer-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    color: rgba(0, 0, 0, 0.85);
+    transition: background-color 0.3s;
+}
+
+.drawer-link:hover,
+.drawer-link.active {
+    background-color: #fff1f0;
+    color: #f5222d;
+}
+
+.drawer-link svg {
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: flex;
+    }
+}
+
+/* Ajustes para tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-link {
+        padding: 0 12px;
+    }
+
+    .branch-name {
+        font-size: 13px;
+    }
+}
+
+/* Agregar a los estilos existentes */
+
+.avatar-icon {
+    cursor: pointer;
+    transition: opacity 0.2s;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.avatar-icon:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para el menú desplegable */
+.ant-dropdown-menu {
+    padding: 4px 0;
+    min-width: 160px;
+}
+
+.ant-dropdown-menu-item {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ant-dropdown-menu-item .anticon {
+    font-size: 16px;
+}
+
+.ant-dropdown-menu-item:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilo específico para el ítem de cerrar sesión */
+.ant-dropdown-menu-item-danger {
+    color: #ff4d4f !important;
+}
+
+.ant-dropdown-menu-item-danger:hover {
+    background-color: #fff1f0 !important;
+    color: #ff4d4f !important;
+}
+
+.branch-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+}
+
+.branch-badge .anticon {
+    font-size: 14px;
+}
+
+/* Ajustar estilos móviles */
+.mobile-view .branch-badge {
+    flex: 1;
+    margin: 0 12px;
+    justify-content: center;
+}
+
+/* Ajustar estilos desktop */
+.desktop-view .branch-badge {
+    min-width: 120px;
+}

@@ -1,0 +1,49 @@
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card-body {
+    flex-grow: 1;
+}
+
+.custom-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.custom-card-status {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.status-canceled {
+    background-color: red;
+}
+
+.status-ready {
+    background-color: green;
+}
+
+.status-waiting {
+    background-color: orange;
+}
+
+.sale-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

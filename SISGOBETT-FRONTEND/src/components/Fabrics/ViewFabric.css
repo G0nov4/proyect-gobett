@@ -1,0 +1,83 @@
+.title-section-fabric {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.description-fabric{
+  padding: 10px;
+}
+
+
+.container-carrousel-fabric {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente la imagen */
+  align-items: center;
+  /* Centra verticalmente si fuera necesario */
+  height: 300px;
+  /* Altura del contenedor del carrusel */
+  background-color: rgb(224, 224, 224);
+}
+
+.img-carrousel-fabric {
+  max-width: 100%;
+  /* Se ajusta al ancho máximo del contenedor */
+  /* Se ajusta a la altura máxima */
+  object-fit: cover;
+  /* Hace que la imagen se adapte sin deformarse */
+}
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.table-header, .table-cell {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.group-title {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price-column {
+  text-align: right;
+}
+
+.price-card {
+    height: 100%;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+}
+
+.price-card .ant-card-head {
+    background: #f0f2f5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.price-card .ant-list-item {
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.price-card .ant-divider {
+    margin: 12px 0;
+}
+
+.price-card .ant-statistic {
+    margin-bottom: 16px;
+}

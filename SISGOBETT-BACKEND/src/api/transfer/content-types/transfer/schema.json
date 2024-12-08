@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transfers",
+  "info": {
+    "singularName": "transfer",
+    "pluralName": "transfers",
+    "displayName": "transfer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "transfer_date": {
+      "type": "date"
+    },
+    "transfer_detail": {
+      "displayName": "transfer_detail",
+      "type": "component",
+      "repeatable": true,
+      "component": "detail.transfer-detail"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "transfer_by": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

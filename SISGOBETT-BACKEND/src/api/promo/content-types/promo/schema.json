@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promos",
+  "info": {
+    "singularName": "promo",
+    "pluralName": "promos",
+    "displayName": "promo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "promotion_name": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "promotion_type": {
+      "type": "enumeration",
+      "enum": [
+        "PORCENTAJE",
+        "MONTO"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "default": "CODE-"
+    },
+    "sale": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sale.sale",
+      "mappedBy": "promo"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}

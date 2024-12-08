@@ -1,0 +1,53 @@
+.order-title {
+  margin: 0;
+  margin-top: 10px;
+  color: #ff0000;
+}
+
+.order-divider {
+  border-top: 2px solid #ff0000;
+}
+
+
+
+.table-wrapper {
+  max-height: 400px;
+  /* Altura máxima para el scroll */
+  overflow-y: scroll;
+  /* Activar el scroll vertical */
+}
+
+/* Para ocultar el scrollbar en navegadores basados en WebKit (Chrome, Safari) */
+.table-wrapper::-webkit-scrollbar {
+  display: none;
+  /* Ocultar el scrollbar */
+}
+
+/* Para Firefox */
+.table-wrapper {
+  scrollbar-width: none;
+  /* Ocultar scrollbar */
+}
+
+/* Para Internet Explorer y Edge */
+.table-wrapper {
+  -ms-overflow-style: none;
+  /* Ocultar scrollbar */
+}
+
+.roll-row {
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+}
+
+.roll-row:hover {
+    background-color: #f0f0f0 !important;
+}
+
+.meter-row {
+    cursor: pointer;
+}
+
+.meter-row:hover {
+    background-color: #e6f7ff !important;
+}

@@ -1,0 +1,22 @@
+.section-form-register {
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 992px) {
+    .hero-description {
+        display: none;
+        margin-top: '30px'
+    }
+
+    .section-form {
+        width: auto;
+    }
+
+    .section-form-login {
+        margin: 20px;
+        width: calc(100% - 40px);
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colors",
+  "info": {
+    "singularName": "color",
+    "pluralName": "colors",
+    "displayName": "Color",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "name": {
+      "type": "string"
+    },
+    "image_color_fabric": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "fabric": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::fabric.fabric",
+      "inversedBy": "colors"
+    },
+    "code": {
+      "type": "string"
+    }
+  }
+}

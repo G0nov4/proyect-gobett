@@ -1,0 +1,40 @@
+.ant-form-item-label label {
+    font-size: 160px;
+}
+
+
+.card-product {
+    margin-bottom: 10px;
+}
+
+.card-product > div {
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding:10px;
+}
+
+.card-product .title-card-name {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: '#4F646F';
+}
+
+.label-item-card-product{
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+}
+
+.ant-col.ant-form-item-label {
+    padding: 0 !important; 
+}
+
+.m-b-40{
+    margin-bottom: 40px;
+}
+
+.ant-input-number .ant-input-number-handler-wrap{
+    display: none;
+}

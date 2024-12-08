@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_detail_sales_details",
+  "info": {
+    "displayName": "Sales-detail",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fabric": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fabric.fabric"
+    },
+    "unit_price": {
+      "type": "decimal"
+    },
+    "quantity_meterage": {
+      "type": "decimal"
+    },
+    "sales_unit": {
+      "type": "enumeration",
+      "enum": [
+        "POR METRO",
+        "POR ROLLO"
+      ]
+    },
+    "color": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::color.color"
+    },
+    "roll_code": {
+      "type": "string"
+    },
+    "cuts": {
+      "type": "integer"
+    }
+  }
+}

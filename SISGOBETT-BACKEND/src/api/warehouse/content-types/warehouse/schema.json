@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "warehouses",
+  "info": {
+    "singularName": "warehouse",
+    "pluralName": "warehouses",
+    "displayName": "warehouse",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "ACTIVO",
+        "INACTIVO",
+        "EN MANTENIMIENTO"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "rolls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::roll.roll",
+      "mappedBy": "warehouse"
+    }
+  }
+}

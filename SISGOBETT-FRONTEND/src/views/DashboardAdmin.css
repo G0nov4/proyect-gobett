@@ -1,0 +1,72 @@
+
+.dashboard-title {
+    margin-bottom: 24px !important;
+    color: #1a3353 !important;
+    margin-top: 0px;
+}
+
+.stat-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.stat-card .ant-statistic-title {
+    color: rgba(255,255,255,0.85) !important;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.stat-card .ant-statistic-content {
+    color: white !important;
+    font-size: 1.5rem;
+}
+
+/* Colores para las tarjetas de estadísticas */
+.stat-card.blue {
+    background: #1890ff;
+}
+
+.stat-card.green {
+    background: #52c41a;
+}
+
+.stat-card.purple {
+    background: #722ed1;
+}
+
+.stat-card.orange {
+    background: #fa8c16;
+}
+
+/* Estilos para la tarjeta de contenido */
+.content-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 24px;
+}
+
+.content-card .ant-card-head-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 16px;
+    }
+
+    .stat-card {
+        margin-bottom: 16px;
+    }
+
+    .dashboard-title {
+        font-size: 24px !important;
+    }
+}

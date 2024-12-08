@@ -1,0 +1,20 @@
+.custom-card {
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.custom-card:hover {
+    border-color: var(--selected-color);
+    box-shadow: 0 0 0 2px rgba(var(--selected-color), 0.1);
+}
+
+.custom-card.selected {
+    background-color: #e6f7ff;
+    border-color: var(--selected-color);
+}
+
+.custom-space {
+    flex-wrap: wrap;
+    gap: 8px;
+}

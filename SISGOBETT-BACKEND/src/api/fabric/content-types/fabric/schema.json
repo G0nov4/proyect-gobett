@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fabrics",
+  "info": {
+    "singularName": "fabric",
+    "pluralName": "fabrics",
+    "displayName": "Fabric",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "code": {
+      "type": "string"
+    },
+    "arrive_date": {
+      "type": "datetime"
+    },
+    "availability_status": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "height": {
+      "type": "decimal",
+      "default": 1.6,
+      "required": true
+    },
+    "retail_price": {
+      "type": "decimal"
+    },
+    "wholesale_price": {
+      "type": "decimal"
+    },
+    "wholesale_price_assorted": {
+      "type": "decimal"
+    },
+    "price_per_roll": {
+      "type": "decimal"
+    },
+    "price_per_roll_assorted": {
+      "type": "decimal"
+    },
+    "fabric_images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::categorie.categorie"
+    },
+    "supplier": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::supplier.supplier"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "rolls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::roll.roll",
+      "mappedBy": "fabric"
+    },
+    "colors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::color.color",
+      "mappedBy": "fabric"
+    },
+    "cost": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_detail_transfer_details",
+  "info": {
+    "displayName": "transfer_detail"
+  },
+  "options": {},
+  "attributes": {
+    "roll": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::roll.roll"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "decimal"
+    }
+  }
+}

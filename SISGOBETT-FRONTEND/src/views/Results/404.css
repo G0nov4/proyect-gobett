@@ -1,0 +1,172 @@
+.error-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.error-content {
+    text-align: center;
+    padding: 3rem;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+}
+
+.error-number {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #e73737, #facf59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+}
+
+.logo-container-sis {
+    margin: 1rem auto 2rem;
+    position: relative;
+}
+
+.floating-logo {
+    width: 200px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.error-text {
+    margin-bottom: 2rem;
+}
+
+.error-subtitle {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.error-description {
+    color: #718096;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.buttons-container {
+    display:     flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.back-button,
+.login-button {
+    height: 45px !important;
+    padding: 0 30px !important;
+    border-radius: 25px !important;
+    font-size: 1rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.back-button {
+    background:linear-gradient(45deg, #e73737, #be1212) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.login-button {
+    background: white !important;
+    border: 2px solid #2c5282 !important;
+    color: #2c5282 !important;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    background:linear-gradient(45deg, #e73737, #ce9803)!important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    background: #f8fafc !important;
+    border-color: #b81f1f !important;
+    color: #e43333 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .error-content {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .error-number {
+        font-size: 2.5rem;
+        top: 15px;
+        right: 20px;
+    }
+
+    .floating-logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-content {
+        padding: 1.5rem;
+    }
+
+    .error-number {
+        font-size: 2rem;
+        top: 10px;
+        right: 15px;
+    }
+
+    .error-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .error-description {
+        font-size: 0.875rem;
+    }
+
+    .floating-logo {
+        width: 120px;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .back-button,
+    .login-button {
+        width: 100% !important;
+        margin: 0.25rem 0;
+    }
+} 

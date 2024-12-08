@@ -1,0 +1,173 @@
+.color-card-container {
+    transition: all 0.3s ease;
+}
+
+.color-card-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.color-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.color-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.rolls-container {
+    padding: 0 8px;
+}
+
+.rolls-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rolls-count {
+    background: #f0f2f5;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #666;
+}
+
+.roll-card {
+    transition: all 0.2s ease;
+}
+
+.roll-card:hover {
+    background: #fff !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.roll-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color-section {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.color-palette {
+    display: flex;
+    align-items: stretch;
+}
+
+.color-strip {
+    width: 120px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-info {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.color-name-input {
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+}
+
+.color-code-input {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.delete-color-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.rolls-dashboard {
+    background: #f8f9fa;
+    padding: 24px;
+}
+
+.rolls-manager {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rolls-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rolls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.roll-tile {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    transition: all 0.2s ease;
+}
+
+.roll-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.roll-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.roll-number {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.roll-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footage-input {
+    margin-bottom: 0;
+}
+
+.add-roll-btn {
+    height: 100%;
+    min-height: 120px;
+    border: 2px dashed #e5e7eb;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.add-roll-btn:hover {
+    border-color: #6366f1;
+    background: #f5f5ff;
+}

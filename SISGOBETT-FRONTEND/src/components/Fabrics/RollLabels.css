@@ -1,0 +1,121 @@
+.labels-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.roll-label {
+    border: 1px solid #000;
+    padding: 12px;
+    width: 300px;
+    height: 140px;
+    page-break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+.label-logo {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+}
+
+.roll-code {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    letter-spacing: 1px;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.roll-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.roll-info-table td {
+    padding: 2px 4px;
+}
+
+.roll-info-table .label {
+    width: 30%;
+    font-weight: bold;
+    color: #666;
+}
+
+.roll-info-table .value {
+    width: 70%;
+}
+
+.color-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.color-sample {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: 14px;
+    color: #1890ff;
+}
+
+.color-code {
+    font-size: 15px;
+
+    margin-left: 4px;
+}
+
+@media print {
+    @page {
+        size: letter;
+        margin: 0.5cm;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    .labels-container, .labels-container * {
+        visibility: visible;
+    }
+
+    .labels-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10mm;
+    }
+
+    .roll-label {
+        break-inside: avoid;
+        border: 1px solid #000;
+    }
+
+    .label-logo {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+}

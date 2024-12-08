@@ -1,0 +1,48 @@
+:root {
+    --color-focus: #ff0000; /* Color rojo */
+  }
+
+.sidebar {
+    color: #fff;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    width: 0px;
+  }
+ 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+
+}
+
+.logo-icon{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.menu-bar{
+    display: flex;
+    flex-direction: column;
+    max-height: auto;
+}
+
+@media (max-width: 992px) {
+  .sidebar{
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+  .ant-layout-sider {
+    width: 100% !important;
+  }
+}
+

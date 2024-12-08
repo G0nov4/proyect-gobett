@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales",
+  "info": {
+    "singularName": "sale",
+    "pluralName": "sales",
+    "displayName": "sales",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "delivery": {
+      "type": "enumeration",
+      "enum": [
+        "EN TIENDA",
+        "EN DOMICILIO",
+        "LUGAR ESPECIFICO"
+      ],
+      "default": "EN TIENDA"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "branch": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::branch.branch"
+    },
+    "detail": {
+      "type": "component",
+      "repeatable": true,
+      "component": "detail.sales-detail"
+    },
+    "promo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::promo.promo",
+      "inversedBy": "sale"
+    },
+    "sales_type": {
+      "type": "enumeration",
+      "enum": [
+        "PEDIDO",
+        "VENTA"
+      ]
+    },
+    "address": {
+      "type": "text"
+    },
+    "delivery_date": {
+      "type": "date"
+    },
+    "payments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::payment.payment",
+      "mappedBy": "sale"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "PENDIENTE",
+        "COMPLETADO",
+        "CANCELADO"
+      ]
+    }
+  }
+}
